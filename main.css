@@ -1,0 +1,37 @@
+/*GENERAL*/
+.marginless {
+    margin: 0;
+}
+.paddingless {
+    padding: 0;
+}
+.centering {
+    margin: 0 auto;
+}
+
+/*MENU*/
+.logo {
+    width: 150px;
+}
+.fullwidth {
+    width: 100%;
+}
+#navbarNavDropdown{
+    justify-content: flex-end;
+}
+.flags {
+    width: 30px;
+}
+.nav-link {
+    text-align: center;
+}
+
+/*ABOUT US*/
+.title {
+    text-align: center;
+    margin: 20px auto;
+}
+.text {
+    text-align: justify;
+    margin: 10px auto;
+}
