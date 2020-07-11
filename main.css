@@ -8,6 +8,14 @@
 .centering {
     margin: 0 auto;
 }
+.title {
+    text-align: center;
+    margin: 20px auto;
+}
+.text {
+    text-align: justify;
+    margin: 10px auto;
+}
 
 /*MENU*/
 .logo {
@@ -27,11 +35,9 @@
 }
 
 /*ABOUT US*/
-.title {
+
+/*SERVICES*/
+.services p {
     text-align: center;
-    margin: 20px auto;
-}
-.text {
-    text-align: justify;
-    margin: 10px auto;
+    font-size: large;
 }
