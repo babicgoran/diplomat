@@ -41,3 +41,21 @@
     text-align: center;
     font-size: large;
 }
+
+
+/* Numbers section  */
+
+
+.counter-container{
+    text-align: center;
+
+}
+.counter {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.counter-container span{
+    font-weight: 500;
+    font-size: 1.25rem;
+}
