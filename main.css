@@ -1,8 +1,6 @@
 /*GENERAL*/
-.marginless {
+* {
     margin: 0;
-}
-.paddingless {
     padding: 0;
 }
 .centering {
@@ -12,7 +10,10 @@
     text-align: center;
     margin: 20px auto;
 }
-.text {
+h3 {
+    text-align: center;
+}
+p {
     text-align: justify;
     margin: 10px auto;
 }
@@ -42,10 +43,7 @@
     font-size: large;
 }
 
-
 /* Numbers section  */
-
-
 .counter-container{
     text-align: center;
 
@@ -54,8 +52,8 @@
     font-size: 36px;
     font-weight: 700;
 }
-
 .counter-container span{
     font-weight: 500;
     font-size: 1.25rem;
 }
+/* CONTACT */
