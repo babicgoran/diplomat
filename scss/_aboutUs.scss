@@ -1,0 +1,26 @@
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.about-us__title { 
+    font-family: $bold;
+    text-align: center;
+    margin: 45px 0;
+    font-size: 36px;
+}
+
+.about-us__text {
+    font-family: $regular;
+    text-align: justify;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+}
+
+@media (min-width: 320px ) and (max-width: 767px) {
+}
