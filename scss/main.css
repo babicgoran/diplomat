@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  padding: 0px 120px; }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  body {
+    padding: 0px 0px; } }
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    padding: 0px 0px; } }
 @font-face {
   font-family: 'Roboto-Black';
   src: url("../fonts/Roboto-Black.ttf") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.ttf") format("truetype"); }
@@ -95,7 +104,6 @@
   margin: 0 auto; }
 
 .banner__img-container {
-  background-color: #D9251C;
   display: flex;
   justify-content: center; }
 
