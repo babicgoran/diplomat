@@ -46,8 +46,8 @@ body {
 
 .navigation__link {
   text-decoration: none;
-  color: #000;
-  font-family: "Roboto-Bold";
+  color: #212429;
+  font-family: "Roboto-Regular";
   transition: 350ms ease;
   font-size: 16px; }
   .navigation__link:hover {
@@ -73,7 +73,7 @@ body {
       width: 30px;
       height: 4px;
       margin: 2px 0;
-      background-color: #000; }
+      background-color: #212429; }
     .navigation__mobile-button:hover {
       cursor: pointer; }
 
@@ -125,11 +125,12 @@ body {
 .banner__counter-data {
   font-size: 36px;
   color: #fff;
-  font-family: "Roboto-Black"; }
+  font-family: "Roboto-Regular"; }
 
 .banner__counter-title {
-  font-size: 24px;
-  font-family: "Roboto-Regular"; }
+  font-size: 20px;
+  font-family: "Roboto-Regular";
+  color: #212429; }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .banner__counters-container {
@@ -153,16 +154,18 @@ body {
 .about-us {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 40px; }
+  padding: 0px 40px 20px; }
 
 .about-us__title {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Regular";
+  color: #212429;
   text-align: center;
   margin: 45px 0;
   font-size: 36px; }
 
 .about-us__text {
   font-family: "Roboto-Regular";
+  color: #212429;
   text-align: justify;
   padding-bottom: 20px;
   font-size: 16px; }
@@ -180,7 +183,7 @@ body {
   text-align: center;
   color: #fff;
   margin: 45px 0;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Regular";
   font-size: 36px; }
 
 .service__box {
@@ -192,13 +195,15 @@ body {
 
 .service__box-title {
   text-align: center;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Regular";
+  color: #fff;
   font-size: 24px;
   padding: 10px 0; }
 
 .service__box-text {
   text-align: center;
   font-family: "Roboto-Regular";
+  color: #212429;
   font-size: 16px;
   padding: 10px 5px; }
 
@@ -223,6 +228,7 @@ body {
   text-align: center;
   font-size: 36px;
   font-family: "Roboto-Bold";
+  color: #212429;
   margin: 45px 0; }
 
 .gallery__container {
@@ -272,7 +278,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 36px;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Regular";
   margin: 45px 0;
   color: #fff; }
 
@@ -281,10 +287,11 @@ body {
   .contact__box p {
     text-align: center;
     margin: 5px 0;
-    font-family: "Roboto-Bold"; }
+    font-family: "Roboto-Bold";
+    color: #fff; }
   .contact__box a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-family: "Roboto-Regular"; }
     .contact__box a:hover {
       color: #fff; }
@@ -298,15 +305,16 @@ body {
   margin: 0 auto;
   display: flex;
   background-color: #D9251C;
-  padding-top: 20px; }
+  padding-top: 20px;
+  text-align: center; }
 
 .emergency__box-wide {
-  width: 60%;
+  width: 50%;
   padding-left: 40px;
   padding-bottom: 20px; }
 
 .emergency__box-small {
-  width: 40%;
+  width: 50%;
   padding-right: 40px; }
 
 .emergency__photo {
@@ -323,7 +331,7 @@ body {
   margin: 20px 0; }
 
 .emergency__title--large-bold {
-  font-family: "Roboto-Black";
+  font-family: "Roboto-Bold";
   font-size: 44px; }
 
 .emergency__contact {
@@ -385,9 +393,7 @@ body {
     text-align: center; }
 
   .emergency__call-button {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
     margin-top: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

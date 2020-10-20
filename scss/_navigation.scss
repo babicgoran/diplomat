@@ -30,7 +30,7 @@
 .navigation__link {
     text-decoration: none;
     color: $color-2;
-    font-family: $bold;
+    font-family: $regular;
     transition: 350ms ease;
     font-size: 16px;
 
@@ -47,8 +47,6 @@
         filter: grayscale(0%);
     }
 }
-
-
 
 
 @media (min-width: 768px) and (max-width: 1200px) {

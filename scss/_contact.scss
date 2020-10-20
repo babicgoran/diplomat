@@ -12,7 +12,7 @@
     width: 100%;
     text-align: center;
     font-size: 36px;
-    font-family: $bold;
+    font-family: $regular;
     margin: 45px 0;
     color: $color-1;
 }
@@ -24,11 +24,12 @@
         text-align: center;
         margin: 5px 0;
         font-family: $bold;
+        color: $color-1;
     }
 
     a {
         text-decoration: none;
-        color: $color-2;
+        color: $color-1;
         font-family: $regular;
 
         &:hover {
