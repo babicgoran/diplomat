@@ -41,14 +41,11 @@ button.addEventListener('click', () => {
         }
     })
 
-
 })
 
 
 $('.js-nav-button').on('click', () => {
     $('.js-nav').toggle('slow')
-
     $('.js-nav-button').toggleClass('navigation__mobile-button--red')
-
 }
 )
