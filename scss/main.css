@@ -109,7 +109,8 @@ body {
   position: relative; }
 
 .banner__img {
-  width: 100%; }
+  width: 100%;
+  max-height: fit-content; }
 
 .banner__header-title {
   width: 100%;
