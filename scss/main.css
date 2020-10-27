@@ -38,6 +38,7 @@ body {
   display: none; }
 
 .navigation__list {
+  z-index: 100;
   list-style-type: none;
   display: flex; }
 
@@ -104,13 +105,17 @@ body {
   margin: 0 auto; }
 
 .banner__img-container {
-  display: flex;
-  justify-content: center;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
 
 .banner__img {
   width: 100%;
-  max-height: fit-content; }
+  background-image: url(../photos/diplomat-car-cover.jpg);
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .banner__header-title {
   width: 100%;
@@ -152,7 +157,8 @@ body {
     width: 100%; }
 
   .banner__img {
-    width: 100%; }
+    width: 100%;
+    height: 200px; }
 
   .banner__header-title {
     font-size: 18px;
