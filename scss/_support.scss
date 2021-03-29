@@ -91,35 +91,34 @@
 
     .emergency {
         flex-direction: column; 
-    } 
-
-    .emergency__box-wide {
-        width: 100%;
-        order: 2;
-        padding-left: 0;
-    }
     
-    .emergency__box-small {
-        width: 100%;
-        order: 1;
-        padding-right: 0;
-    }
+        &__box-wide {
+            width: 100%;
+            order: 2;
+            padding-left: 0;
+        }
+        
+        &__box-small {
+            width: 100%;
+            order: 1;
+            padding-right: 0;
+        }
 
-.emergency__call-button {
-    margin: 0 auto;
-}
+        &__call-button {
+            margin: 0 auto;
+        }
 
-.emergency__title {
-    text-align: center;
-}
+        &__title {
+            text-align: center;
+        }
 
-.emergency__contact {
-    text-align: center;
-}
+        &__contact {
+            text-align: center;
+        }
 
-.emergency__call-button {
-    text-align: center;
-    margin-top: 20px;
-}
-
+        &__call-button {
+            text-align: center;
+            margin: 30px auto 50px;
+        }
+    } 
 }

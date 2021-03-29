@@ -49,11 +49,16 @@
 }
 
 @media (min-width: 320px ) and (max-width: 767px) {
-.services {
-    flex-direction: column;
-}
+    .services {
+        flex-direction: column;
+    }
 
-.service__box {
-    width: 100%;
-}
+    .service__box {
+        width: 100%;
+        &-text {
+            font-size: 20px;
+            padding: 10px 10px ;
+        }
+    }
+
 }

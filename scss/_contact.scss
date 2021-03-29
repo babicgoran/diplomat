@@ -45,8 +45,16 @@
 }
 
 @media (min-width: 320px ) and (max-width: 767px) {
-.contact__box {
-    width: 100%;
-    margin-bottom: 25px;
-}
+    .contact__box {
+        width: 100%;
+        margin-bottom: 25px;
+
+        p {
+            font-size: 20px;
+            margin: 10px;
+        }
+        img {
+            margin: 40px 20px 20px;
+        }
+    }
 }
