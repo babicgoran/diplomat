@@ -1,53 +1,49 @@
 .contact {
-    max-width: 1200px;
-    margin: 0 auto;
     background-color: $color-3;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
     padding: 30px 0;
-}
 
-.contact__title {
-    width: 100%;
-    text-align: center;
-    font-size: 36px;
-    font-family: $regular;
-    margin: 45px 0;
-    color: $color-1;
-}
-
-.contact__box {
-    width: 40%;
-    text-align: center;
-
-    p {
-        text-align: center;
-        margin: 5px 0;
-        font-family: $regular;
+    &__title {
         color: $color-1;
+        font-family: $regular;
+        font-size: 36px;
+        margin: 45px 0;
+        text-align: center;
+        width: 100%;
     }
 
-    a {
-        text-decoration: none;
-        color: $color-1;
-        font-family: $regular;
-
-        &:hover {
+    &__box {
+        text-align: center;
+        width: 40%;
+    
+        p {
             color: $color-1;
+            font-family: $regular;
+            margin: 5px 0;
+            text-align: center;
+        }
+    
+        a {
+            color: $color-1;
+            font-family: $regular;
+            text-decoration: none;
+    
+            &:hover {
+                color: $color-1;
+            }
         }
     }
 }
 
-
-
-@media (min-width: 768px) and (max-width: 1200px) {
-}
-
 @media (min-width: 320px ) and (max-width: 767px) {
+    
     .contact__box {
-        width: 100%;
         margin-bottom: 25px;
+        width: 100%;
 
         p {
             font-size: 20px;

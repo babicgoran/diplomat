@@ -1,95 +1,96 @@
 .banner {
-    max-width: 1200px;
     margin: 0 auto;
-}
+    max-width: 1200px;
 
-.banner__img-container {
-    position: relative;
-    z-index: 1;
-}
+    &__img-container {
+        position: relative;
+        z-index: 1;
+    }
 
-.banner__img {
-    width: 100%;
-    background-image: url(../photos/diplomat-car-cover.jpg);
-    background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    &__img {
+        background-color: #cccccc;
+        background-image: url(../photos/diplomat-car-cover.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+    }
 
-.banner__header-title {
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-family: $regular;
-    font-weight: lighter;
-    font-size: 40px;
-    color: $color-1;
-}
+    &__header-title {
+        bottom: 20px;
+        color: $color-1;
+        font-family: $regular;
+        font-size: 40px;
+        font-weight: lighter;
+        padding-left: 30px;
+        position: absolute;
+        text-shadow: 5px 5px 5px #000;
+        width: 100%;
+    }
 
-.banner__counters-container {
-    display:flex;
-    justify-content: center;
-    background-color: $color-3;
-}
+    &__counters-container {
+        background-color: $color-3;
+        display:flex;
+        justify-content: center;
+    }
 
-.banner__counter {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 25px 0;
-}
+    &__counter {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 0;
+        width: 25%;
+    }
 
-.banner__counter-data {
-    font-size: 36px;
-    color: $color-1;
-    font-family: $regular;
-}
+    &__counter-data {
+        color: $color-1;
+        font-family: $regular;
+        font-size: 36px;
+    }
 
-.banner__counter-title { 
-    font-size: 20px;
-    font-family: $regular;
-    color: $color-2;
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
+    &__counter-title { 
+        color: $color-2;
+        font-family: $regular;
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 320px ) and (max-width: 767px) {
 
-    .banner__counters-container {
-        flex-direction: row;
-    }
+    .banner {
+        
+        &__img {
+            height: 200px;
+            width: 100%;
 
-    .banner__img-container {
-        width:100%;
-    }
-
-    .banner__img {
-        width: 100%;
-        height: 200px;
-    }
-
-    .banner__header-title {
-        font-size: 18px;
-        left: 5px;
-        bottom: 5px;
-    }
-
-    .banner__counter {
-        width: 25%;
-        text-align: center;
-    }
-
-    .banner__counter-data {
-        font-size: 22px;
-    }
+            &-container {
+                width:100%;
+            }
+        }
     
-    .banner__counter-title { 
-        font-size: 14px;
+        &__counters-container {
+            flex-direction: row;
+        }
+    
+        &__counter {
+            text-align: center;
+            width: 25%;
+
+            &-data {
+                font-size: 22px;
+            }
+
+            &-title { 
+                font-size: 14px;
+            }
+        }
+    
+        &__header-title {
+            bottom: 5px;
+            font-size: 18px;
+            padding-left: 5px;
+        } 
     }
 }
 

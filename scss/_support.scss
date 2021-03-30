@@ -1,111 +1,116 @@
 .emergency { 
-    max-width: 1200px;
-    margin:0 auto;
-    display: flex;
     background-color: $color-2;
+    display: flex;
+    margin:0 auto;
+    max-width: 1200px;
     padding-top: 20px;
     text-align: center;
-}
 
-.emergency__box-wide {
-    width: 50%;
-    padding-left: 40px;
-    padding-bottom: 20px;
-}
+    &__box {
 
-.emergency__box-small {
-    width: 50%;
-    padding-right: 40px;
-}
+        &-small {
+            padding-right: 40px;
+            width: 50%;
+        }
 
-.emergency__photo {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-}
+        &-wide {
+            padding-bottom: 20px;
+            padding-left: 40px;
+            width: 50%;
+        }
+    }
 
-.emergency__title {
-    font-size: 36px;
-    font-family: $regular;
-    color: $color-1;
-    font-weight: normal;
-    letter-spacing: 2px;
-    margin: 20px 0;
-}
+    &__photo {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
 
-.emergency__title--large-bold {
-    font-family: $bold;
-    font-size: 44px;
-}
-
-.emergency__contact {
-    font-size: 20px;
-    font-family: $regular;
-    padding: 10px 20px;
-
-    a {
-        text-decoration: none;
+    &__title {
         color: $color-1;
-        
+        font-family: $regular;
+        font-size: 36px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        margin: 20px 0;
+
+        &--large-bold {
+            font-family: $bold;
+            font-size: 44px;
+        }
+    }
+    
+    &__contact {
+        font-family: $regular;
+        font-size: 20px;
+        padding: 10px 20px;
+    
+        a {
+            color: $color-1;
+            text-decoration: none;
+        }
+    }
+
+    &__call-button {
+        border: 2px solid $color-1;
+        color: $color-1;
+        display:inline-block;
+        font-family: $regular;
+        font-size: 20px;
+        margin-top: 25px;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: 350ms ease;
+       
+        &:hover {
+            background-color: rgba($color-1, 0.3);
+        }
     }
 }
-
-.emergency__call-button {
-    display:inline-block;
-    padding: 20px 10px;
-    border: 2px solid $color-1;
-    font-size: 20px;
-    font-family: $regular;
-    padding: 10px 20px;
-    color: $color-1;
-    text-decoration: none;
-    margin-top: 25px;
-    transition: 350ms ease;
-    &:hover {
-        background-color: rgba($color-1, 0.3);
-    }
-}
-
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
-    .emergency__box-wide {
-        width: 50%;
-        padding-left: 40px;
-        padding-bottom: 20px;
-    }
+    .emergency {
+
+        &__box {
+
+            &-small {
+                padding-right: 40px;
+                width: 50%;
+            }
+
+            &-wide {
+                padding-bottom: 20px;
+                padding-left: 40px;
+                width: 50%;
+            }
+        }
     
-    .emergency__box-small {
-        width: 50%;
-        padding-right: 40px;
+        &__contact {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
     }
-
-    .emergency__contact {
-        font-size: 16px;
-        padding: 5px 10px;
-    }
-
 }
 
 @media (min-width: 320px ) and (max-width: 767px) {
 
     .emergency {
         flex-direction: column; 
-    
-        &__box-wide {
-            width: 100%;
-            order: 2;
-            padding-left: 0;
-        }
-        
-        &__box-small {
-            width: 100%;
-            order: 1;
-            padding-right: 0;
-        }
 
-        &__call-button {
-            margin: 0 auto;
+        &__box {
+
+            &-small {
+                order: 1;
+                padding-right: 0;
+                width: 100%;
+            }
+
+            &-wide {
+                order: 2;
+                padding-left: 0;
+                width: 100%;
+            }
         }
 
         &__title {
